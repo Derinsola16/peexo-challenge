@@ -7,12 +7,9 @@ import "@/assets/css/style.css";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "@fortawesome/fontawesome-free/js/all.js";
 
-
 Vue.config.productionTip = false;
 
-new Vue(
-  {
-    router,
-    render: (h) => h(App),
-  }
-).$mount("#app");
+new Vue({
+  router,
+  render: (h) => h(App),
+}).$mount("#app");

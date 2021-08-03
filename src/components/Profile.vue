@@ -10,7 +10,6 @@
         text-center
         size
         container
-        
       "
     >
       <p class="text-warning text-end point" @click="hide">Hide</p>
@@ -55,9 +54,15 @@
           <p>www.peexoo.ai/anijohnson</p>
         </div>
         <div class="d-flex">
-          <div class="mt-1 me-4 rounded-circle"><i class="fab fa-twitter "></i></div>
-          <div class="mt-1 me-4 rounded-circle"><i class="fab fa-instagram "></i></div>
-          <div class="mt-1 me-4 rounded-circle"><i class="fas fa-envelope "></i></div>
+          <div class="mt-1 me-4 rounded-circle">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="mt-1 me-4 rounded-circle">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="mt-1 me-4 rounded-circle">
+            <i class="fas fa-envelope"></i>
+          </div>
           <p class="bg-warning rounded-pill text-white px-3 py-1">Book Now</p>
         </div>
       </div>
@@ -71,11 +76,10 @@ export default {
   methods: {
     hide() {
       let page = document.getElementById("profile");
-      let gallery = document.getElementById("image");
+      // let gallery = document.getElementById("image");
       page.classList.add("d-hide");
       page.classList.remove("d-show");
-      gallery.classList.add("w-auto");
-      
+      // gallery.classList.add("w-auto");
     },
   },
 };

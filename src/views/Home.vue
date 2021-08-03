@@ -3,22 +3,22 @@
     <div class="w-25 me-4 bottom-left d-hide" id="profile"><Profile /></div>
     <div class="wide w-auto" id="image">
       <div class="row">
-      <div
-        class="col-lg-4 mb-2 "
-        v-for="image in imageUrl.results || imageUrl"
-        :key="image.id"
-      >
-        <img
-          style="object-fit: cover"
-          width="300"
-          height="200"
-          :src="image.urls.regular"
-          class="w-100 shadow-1-strong rounded"
-          alt="image"
-        />
+        <div
+          class="col-lg-4 mb-2"
+          v-for="image in imageUrl.results || imageUrl"
+          :key="image.id"
+        >
+          <img
+            style="object-fit: cover"
+            width="300"
+            height="200"
+            :src="image.urls.regular"
+            class="w-100 shadow-1-strong rounded"
+            alt="image"
+          />
+        </div>
       </div>
     </div>
-    </div> 
   </div>
 </template>
 
@@ -32,7 +32,7 @@ export default {
   components: {
     Profile,
   },
-    data() {
+  data() {
     return {
       unsplashData: null,
     };

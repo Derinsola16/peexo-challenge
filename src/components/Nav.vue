@@ -46,19 +46,31 @@
         <p class="text-warning mt-4 point" @click="show">Show Card</p>
       </div>
       <div class="d-flex mt-2 mb-2">
-        <router-link to="/" class="text-decoration-none text-dark" :class="{
+        <router-link
+          to="/"
+          class="text-decoration-none text-dark"
+          :class="{
             active: currentRoute == 'Home',
-          }">
+          }"
+        >
           <p class="m-2">Portfolio</p>
         </router-link>
-        <router-link to="/availability" class="text-decoration-none text-dark" :class="{
+        <router-link
+          to="/availability"
+          class="text-decoration-none text-dark"
+          :class="{
             active: currentRoute == 'About',
-          }">
+          }"
+        >
           <p class="m-2">Availability</p>
         </router-link>
-        <router-link to="/pricing" class="text-decoration-none text-dark" :class="{
+        <router-link
+          to="/pricing"
+          class="text-decoration-none text-dark"
+          :class="{
             active: currentRoute == 'Pricing',
-          }">
+          }"
+        >
           <p class="m-2">Pricing Package</p>
         </router-link>
       </div>

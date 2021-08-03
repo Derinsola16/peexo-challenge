@@ -17,7 +17,6 @@ const routes = [
         path: "",
         component: Home,
         name: "Home",
-        
       },
       {
         path: "/availability",
@@ -28,7 +27,7 @@ const routes = [
         path: "/pricing",
         component: Pricing,
         name: "Pricing",
-      }
+      },
     ],
   },
   // {
